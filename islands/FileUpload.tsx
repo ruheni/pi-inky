@@ -70,7 +70,7 @@ export default function FileUpload() {
         </div>
 
         <input
-          accept="image/*"
+          accept="image/jpeg,image/png,image/jpg"
           type="file"
           id="files"
           name="files"
