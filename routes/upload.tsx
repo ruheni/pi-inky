@@ -1,7 +1,9 @@
 import { ArrowLeftIcon } from "lucide-preact";
-import { define, PHOTOS_DIR } from "../utils.ts";
+
 import FileUpload from "../islands/FileUpload.tsx";
 import Alert from "../islands/Alert.tsx";
+
+import { define, PHOTOS_DIR } from "../utils.ts";
 
 export const handler = define.handlers({
   async POST(ctx) {
@@ -65,6 +67,7 @@ export default define.page<typeof handler>(function UploadPage(props) {
         <h1 class="mb-8 border-4 border-black bg-white p-6 text-4xl font-black uppercase shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
           Upload Files
         </h1>
+
         {message && <Alert message={message} success={success} />}
 
         <FileUpload />
