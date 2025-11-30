@@ -44,9 +44,17 @@ export default define.page<typeof handler>(function Home(props) {
   const { photos } = props.data;
   return (
     <div class="container mx-auto px-4 py-8 max-w-7xl">
-      <h1 class="text-4xl md:text-5xl font-heading mb-8 text-foreground">
-        Photo Gallery
-      </h1>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+        <h1 class="text-4xl md:text-5xl font-heading mb-8 text-foreground">
+          Photo Gallery
+        </h1>
+        <a
+          href="/upload"
+          class="mb-6 inline-flex items-center gap-2 border-4 border-black bg-white px-6 py-3 font-black uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+        >
+          Upload New Photo
+        </a>
+      </div>
 
       {photos.length === 0
         ? (

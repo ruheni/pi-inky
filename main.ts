@@ -6,7 +6,7 @@ export const app = new App<State>();
 app.use(staticFiles());
 
 app.use(csrf({
-  origin: ['http://localhost:8000', 'http://localhost:5173'],
+  origin: ["http://localhost:8000", "http://localhost:5173"],
 }));
 
 app.onError("*", (ctx) => {
