@@ -18,7 +18,7 @@
 		</a>
 	</div>
 
-	{#if photos.length === 0}
+	{#if photos && photos.length === 0}
 		<div class="bg-secondary-background border-4 border-border p-8 text-center shadow-shadow">
 			<h2 class="text-3xl font-heading mb-2">No photos found.</h2>
 			<p class="text-foreground">Upload your first photo!</p>
