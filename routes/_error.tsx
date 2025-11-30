@@ -46,10 +46,10 @@ export default function ErrorPage(props: PageProps) {
         {/* Main error box */}
         <div class="bg-main border-4 border-border shadow-shadow p-8 mb-6">
           <div class="text-center">
-            <div class="text-7xl font-heading font-black mb-4 text-main-foreground">
+            <div class="text-7xl font-heading mb-4 text-main-foreground">
               ⚠️
             </div>
-            <h1 class="text-4xl md:text-5xl font-heading font-black mb-4 text-main-foreground uppercase">
+            <h1 class="text-4xl md:text-5xl font-heading mb-4 text-main-foreground uppercase">
               Something Went Wrong
             </h1>
             <p class="text-xl font-base text-main-foreground mb-6">
@@ -62,7 +62,7 @@ export default function ErrorPage(props: PageProps) {
         <div class="text-center">
           <a
             href="/"
-            class="inline-block bg-secondary-background text-foreground border-4 border-border shadow-shadow px-8 py-4 text-xl font-heading font-bold uppercase hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+            class="inline-block bg-secondary-background text-foreground border-4 border-border shadow-shadow px-8 py-4 text-xl font-heading uppercase hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
           >
             Go Back Home
           </a>
